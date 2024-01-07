@@ -11,37 +11,13 @@ Node versão 14
 ### Clonando o repositório
 
 ```
-git clone https://github.com/Nicolas-Wender/E-Commerce-Admin.git
+git clone https://github.com/Nicolas-Wender/E-Commerce-Store.git
 ```
 
 ### Instalando dependências
 
 ```
 npm i 
-```
-
-### Configurando .env file
-
-```
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
-NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
-
-DATABASE_URL=''
-NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=""
-STRIPE_API_KEY=
-FRONTEND_STORE_URL=http://localhost:3001
-STRIPE_WEBHOOK_SECRET=
-```
-
-### Conectando PlanetScale e atualizando Prisma
-
-```
-npx prisma generate
-npx prisma db push
 ```
 
 ### Iniciando a aplicação
