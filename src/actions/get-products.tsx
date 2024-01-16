@@ -11,6 +11,10 @@ interface Query {
 }
 
 export default async function getProducts(query: Query): Promise<Product[]> {
+  const requestOptions = {
+    method: 'GET'
+  }
+
   const url = qs.stringifyUrl({
     url: URL,
     query: {
@@ -21,6 +25,7 @@ export default async function getProducts(query: Query): Promise<Product[]> {
     }
   })
 
-  const response = await fetch(url)
+  const response = await fetch(url, requestOptions)
+
   return response.json()
 }
