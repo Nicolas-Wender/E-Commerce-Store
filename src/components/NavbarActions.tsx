@@ -21,10 +21,10 @@ export default function NavbarActions() {
   }
 
   return (
-    <div className="ml-auto flex items-center gap-x-4">
+    <div className="ml-auto flex items-center gap-x-4 lg:mt-0 mt-6">
       <Button
         onClick={() => router.push('/cart')}
-        className="flex items-center rounded-full bg-black px-4 py-2"
+        className="flex items-center rounded-full bg-black lg:px-4 lg:py-2 px-8 py-4 mx-auto"
       >
         <ShoppingBag size={20} color="white" />
         <span className="ml-2 text-sm font-medium text-white">
